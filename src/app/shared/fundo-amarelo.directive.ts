@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Renderer2 } from '@angular/core';
+import { Directive,Renderer2, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[fundoAmarelo]'
