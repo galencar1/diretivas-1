@@ -12,15 +12,23 @@
         [class.active]="aba == 'lista'"
         (click)="aba = 'lista'">Lista</a>
     </div>
+</nav>
+
 <br><br><br>
     <div class="container" [ngSwitch]="aba" >
         <p *ngSwitchCase="'mapa'">Modo Mapa Ativado!</p>
         <p *ngSwitchCase="'lista'">Modo Lista Ativado!</p>
         <p *ngSwitchDefault>Home</p>
-
     </div>
-    
+
+    <br>
+    <h5>Removendo o * e usando o Template</h5>
+    <div class="container" [ngSwitch]="aba" >
+        <p *ngSwitchCase="'mapa'">Modo Mapa Ativado!</p>
+        <p *ngSwitchCase="'lista'">Modo Lista Ativado!</p>
+        <p *ngSwitchDefault>Home</p>
+    </div>
         
     
-  </nav>
+
   
